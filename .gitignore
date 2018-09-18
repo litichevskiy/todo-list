@@ -1,5 +1,4 @@
 /node_modules
-/dist
 *map
 package-lock.json
 .tern-project
