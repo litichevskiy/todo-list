@@ -1,0 +1,9 @@
+@mixin flex_container ( $display, $align_items, $justify_content ) {
+  display: $display;
+  align-items: $align_items;
+  justify-content: $justify_content;
+}
+
+@mixin border_radius ( $radius ) {
+  border-radius: $radius;
+}

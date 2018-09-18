@@ -1,0 +1,12 @@
+.container-task-list-control-panel{
+  padding: 1em 0.5em;
+  background-color: $color-light-grey;
+  border: 1px solid $color-grey;
+  @include flex_container( flex, center, space-around );
+
+  .input-description{
+    display: inline-block;
+    margin-left: 0.2em;
+    cursor: pointer;
+  }
+}

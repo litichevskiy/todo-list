@@ -1,0 +1,67 @@
+.container-task-editor{
+  background-color: $color-light-grey;
+  border: 1px solid $color-grey;
+  padding: 1em 0.5em;
+  color: $color-black;
+
+  .input{
+    width: 250px;
+    font-size: 1em;
+    padding: 0.3em 0.4em;
+    color: $color-black;
+    margin-left: 0.4em;
+    @include border_radius( 5px );
+    border: 1px solid $color-grey;
+    outline: none;
+
+    &:focus{
+      border-color: blue;
+    }
+  }
+
+  .row{
+    position: relative;
+    margin: 0.2em 0;
+    padding: 0.5em 0;
+    @include flex_container( flex, center, flex-end );
+
+    .btn{
+      margin-left: 1em;
+    }
+
+    .error-content{
+      display: none;
+    }
+
+    &.error{
+
+      .input{
+        border-color: $color-error;
+      }
+
+      .error-content{
+        display: inline-block;
+        position: absolute;
+        top: -10px;
+        right: 0.3em;
+        color: $color-error;
+        font-size: 15px;
+      }
+    }
+
+    .requiredFields{
+      position: relative;
+
+      &:after{
+        content: '*';
+        margin-left: 0.5em;
+        vertical-align: sub;
+      }
+    }
+  }
+
+  .select{
+    margin-left: 0.4em;
+    width: 250px;
+  }
+}
